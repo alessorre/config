@@ -1,0 +1,58 @@
+[user]
+    name = alex
+    email = alessorre@gmail.com
+
+[credential]
+    useHttpPath = true
+
+[init]
+    defaultBranch = main
+
+[core]
+    editor = code --wait
+
+[pager]
+    branch = false
+    tag = false
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
+[status]
+    short = true
+    branch = true
+    showUntrackedFiles = all
+
+[commit]
+    verbose = true
+
+[diff]
+    algorithm = histogram
+    colorMoved = zebra
+    colorMovedWS = allow-indentation-change
+    mnemonicPrefix = true
+    renames = true
+
+[fetch]
+    prune = true
+
+[pull]
+    rebase = true
+
+[rebase]
+    autoStash = true
+    autoSquash = true
+
+[merge]
+    conflictStyle = zdiff3
+
+[rerere]
+    enabled = true
+
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
